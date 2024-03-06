@@ -1,5 +1,5 @@
 # ReverseImageSearch-pgvector-OpenAI_Clip
-A quick test using Supabase to test if pgvector is the right solution for a different project. The embedding model I will be using OpenAI's Clip Model which will allow me to embed images and text in the same vector space.
+A quick test using Supabase to test if pgvector is the right solution for a different project. The embedding model I will be using is OpenAI's Clip which will allow me to embed images and text in the same vector space.
 <a href="https://demo-nextjs-with-supabase.vercel.app/">
   <img alt="Next.js and Supabase Starter Kit - the fastest way to build apps with Next.js and Supabase" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
   <h1 align="center">Next.js and Supabase Starter Kit</h1>
