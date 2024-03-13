@@ -19,6 +19,8 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 seed = "image_search.main:seed"
 textsearch = "image_search.main:textsearch"
-imagesearch = "image_search.main:imagesearch"
+imagesearch = "image_search.main:cli_imagesearch"
+rename_to_jpg = "image_search.main:rename_to_jpg"
+
 
 
