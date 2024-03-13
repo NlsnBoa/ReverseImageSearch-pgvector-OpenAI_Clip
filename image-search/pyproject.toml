@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "image-search"
+version = "0.1.0"
+description = ""
+authors = ["Nelson Herrera <ndanielherrera@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+vecs = "^0.4.3"
+sentence-transformers = "^2.5.1"
+matplotlib = "^3.8.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+seed = "image_search.main:seed"
+textsearch = "image_search.main:textsearch"
+imagesearch = "image_search.main:imagesearch"
+
+

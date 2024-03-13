@@ -1,9 +1,5 @@
-import DeployButton from "../components/DeployButton";
-import AuthButton from "../components/AuthButton";
+import AuthButtonn from "@/components/AuthButton";
 import { createClient } from "@/utils/supabase/server";
-import ConnectSupabaseSteps from "@/components/tutorial/ConnectSupabaseSteps";
-import SignUpUserSteps from "@/components/tutorial/SignUpUserSteps";
-import Header from "@/components/Header";
 
 export default async function Index() {
   const canInitSupabaseClient = () => {
@@ -16,7 +12,7 @@ export default async function Index() {
       return false;
     }
   };
-
+  
   const isSupabaseConnected = canInitSupabaseClient();
 
   return (
@@ -24,7 +20,7 @@ export default async function Index() {
       <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
         <div className="w-full max-w-4xl flex justify-between items-center p-3 text-sm">
           <h1 className="w-fit mt-4 font-bold text-4xl mb-4">Whooga Image{" "} <span className=" text-green-500">Search Test</span></h1>
-          {isSupabaseConnected && <AuthButton />}
+          {isSupabaseConnected && <AuthButtonn />}
         </div>
       </nav>
 
