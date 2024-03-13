@@ -38,7 +38,10 @@ export default async function ProtectedPage() {
           <h2 className="font-bold text-4xl mx-auto">Search by Image</h2>
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="picture">Upload your image</Label>
-            <ChooseFileButton id="picture" type="file" />
+            <ChooseFileButton id="picture" type="file" 
+              accept=".jpg" 
+            />
+
           </div>
         </main>
       </div>

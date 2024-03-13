@@ -146,13 +146,13 @@ def imagesearch(query_image_path):
   model = SentenceTransformer('clip-ViT-B-32')
   
   # Encode an image as the query instead of text
-#   query_image_path = './images/Bengals.jpg'  # Path to the query image
+  # query_image_path = './images/Bengals.jpg'  # Path to the query image
   query_img_emb = model.encode(Image.open(query_image_path))
 
   # query the collection using the image embedding
   results = images.query(
     data=query_img_emb,                   # Use image embedding for the query
-    limit=2,                              # Number of records to return
+    limit=3,                              # Number of records to return
     filters={"type": {"$eq": "jpg"}},     # Metadata filters (adjust as needed)
   )
   
@@ -196,16 +196,16 @@ def rename_to_jpg():
     
 
 def cli_imagesearch():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("filepath", help="give the .jpg file path")
+  parser = argparse.ArgumentParser()
+  parser.add_argument("filepath", help="give the .jpg file path")
 
-    args = parser.parse_args()
-    imagesearch(args.filepath)
+  args = parser.parse_args()
+  imagesearch(args.filepath)
 
     
 def cli_textsearch():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("query", help="give the query string")
+  parser = argparse.ArgumentParser()
+  parser.add_argument("query", help="give the query string")
 
-    args = parser.parse_args()
-    imagesearch(args.filepath)
+  args = parser.parse_args()
+  imagesearch(args.filepath)

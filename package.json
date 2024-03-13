@@ -12,6 +12,7 @@
     "autoprefixer": "10.4.17",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
+    "formidable": "^3.5.1",
     "geist": "^1.2.1",
     "lucide-react": "^0.344.0",
     "next": "latest",
@@ -24,6 +25,7 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
+    "@types/formidable": "^3.4.5",
     "@types/node": "20.11.5",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
