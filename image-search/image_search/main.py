@@ -21,13 +21,13 @@ def seed():
   model = SentenceTransformer('clip-ViT-B-32')
 
   # Encode an image:
-  img_emb1 = model.encode(Image.open('./images/Bengals.jpg'))
-  img_emb2 = model.encode(Image.open('./images/Canyon.jpg'))
-  img_emb3 = model.encode(Image.open('./images/Horse.jpg'))
-  img_emb4 = model.encode(Image.open('./images/RedCar.jpg'))
-  img_emb5 = model.encode(Image.open('./images/Dogs.jpg'))
-  img_emb6 = model.encode(Image.open('./images/UnitedStatesFlag.jpg'))
-  img_emb7 = model.encode(Image.open('./images/BugsBunny.jpg'))
+  img_emb1 = model.encode(Image.open('./official_images/Bengals.jpg'))
+  img_emb2 = model.encode(Image.open('./official_images/Canyon.jpg'))
+  img_emb3 = model.encode(Image.open('./official_images/Horse.jpg'))
+  img_emb4 = model.encode(Image.open('./official_images/RedCar.jpg'))
+  img_emb5 = model.encode(Image.open('./official_images/Dogs.jpg'))
+  img_emb6 = model.encode(Image.open('./official_images/UnitedStatesFlag.jpg'))
+  img_emb7 = model.encode(Image.open('./official_images/BugsBunny.jpg'))
 
   # add records to the *images* collection
   images.upsert(
